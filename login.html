@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sign in to Craftlyt—manage pricing, inventory, and your maker storefront." />
+  <title>Sign in — Craftlyt</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-auth">
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">Craftlyt</a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-checkbox" />
+      <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="signup.html" class="login-btn">Sign up</a>
+      </nav>
+
+      <div class="navbar-trailing">
+        <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <div class="container">
+      <div class="auth-layout">
+
+        <div class="auth-form-panel">
+          <p class="eyebrow">Maker access</p>
+          <h1>Welcome back</h1>
+          <p class="auth-lede">Sign in to manage pricing, inventory, and your storefront in one calm workspace.</p>
+
+          <form action="#" method="post" autocomplete="on">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="••••••••" autocomplete="current-password" required>
+            </div>
+
+            <div class="field-row">
+              <label class="remember">
+                <input type="checkbox" name="remember">
+                Remember me
+              </label>
+              <a class="forgot" href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="primary-btn">Sign in</button>
+          </form>
+
+          <p class="auth-switch">New to Craftlyt? <a href="signup.html">Create an account</a></p>
+        </div>
+
+        <aside class="auth-aside" aria-label="Highlight">
+          <img src="https://placehold.co/800x900/e8dfd9/8d3419?text=Craftlyt" alt="" width="800" height="900">
+          <div class="auth-aside-caption">
+            <small>Studio snapshot</small>
+            <p>Pricing, patterns, and peace of mind—built for makers who treat detail as non‑negotiable.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="auth-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Craftlyt</p>
+      <nav aria-label="Footer">
+        <a href="#">Privacy</a>
+        ·
+        <a href="#">Terms</a>
+        ·
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
