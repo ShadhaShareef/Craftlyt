@@ -1,42 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Create your Craftlyt maker account—pricing tools, inventory, and storefront in one place." />
-  <title>Create account — Craftlyt</title>
+<?php
+$pageTitle = 'Sign up — Craftlyt';
+$pageDescription = 'Create a Craftlyt account to manage pricing, inventory, and your maker storefront.';
+$bodyClass = 'page-auth';
+$stylesheets = ['assets/css/styles.css'];
+$pageScripts = [];
+$isPage = false;
+?>
+<?php include __DIR__ . '/components' . '/head.php'; ?>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="page-auth">
 
-  <header class="site-header">
-    <div class="container navbar">
-      <a href="index.html" class="logo">Craftlyt</a>
-
-      <input type="checkbox" id="nav-toggle" class="nav-checkbox" />
-      <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
-
-      <nav class="nav-links" aria-label="Main">
-        <a href="index.html">Home</a>
-        <a href="storefront.html">Storefront</a>
-      </nav>
-
-      <div class="navbar-trailing">
-        <a href="login.html" class="secondary-pill">Sign in</a>
-        <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-    </div>
-  </header>
-
-  <main class="auth-main">
+  <?php include __DIR__ . '/components' . '/header.php'; ?>
+<main class="auth-main">
     <div class="container">
       <div class="auth-layout">
 
@@ -80,7 +54,7 @@
             <button type="submit" class="primary-btn">Create account</button>
           </form>
 
-          <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+          <p class="auth-switch">Already have an account? <a href="login.php">Sign in</a></p>
         </div>
 
         <aside class="auth-aside" aria-label="Highlight">
@@ -110,3 +84,4 @@
 
 </body>
 </html>
+

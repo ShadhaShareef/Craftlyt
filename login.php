@@ -1,43 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sign in to Craftlyt—manage pricing, inventory, and your maker storefront." />
-  <title>Sign in — Craftlyt</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="page-auth">
-
-  <header class="site-header">
-    <div class="container navbar">
-      <a href="index.html" class="logo">Craftlyt</a>
-
-      <input type="checkbox" id="nav-toggle" class="nav-checkbox" />
-      <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
-
-      <nav class="nav-links" aria-label="Main">
-        <a href="index.html">Home</a>
-        <a href="storefront.html">Storefront</a>
-        <a href="signup.html" class="login-btn">Sign up</a>
-      </nav>
+<?php
+$pageTitle = 'Sign in — Craftlyt';
+$pageDescription = 'Sign in to Craftlyt—manage pricing, inventory, and your maker storefront.';
+$bodyClass = 'page-auth';
+$stylesheets = ['assets/css/styles.css'];
+$pageScripts = [];
+$isPage = false;
+?>
+<?php include __DIR__ . '/components' . '/head.php'; ?>
 
 
-      <div class="navbar-trailing">
-        <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-    </div>
-  </header>
-
-  <main class="auth-main">
+  <?php include __DIR__ . '/components' . '/header.php'; ?>
+<main class="auth-main">
     <div class="container">
       <div class="auth-layout">
 
@@ -68,7 +41,7 @@
             <button type="submit" class="primary-btn">Sign in</button>
           </form>
 
-          <p class="auth-switch">New to Craftlyt? <a href="signup.html">Create an account</a></p>
+          <p class="auth-switch">New to Craftlyt? <a href="signup.php">Create an account</a></p>
         </div>
 
         <aside class="auth-aside" aria-label="Highlight">
@@ -98,3 +71,4 @@
 
 </body>
 </html>
+

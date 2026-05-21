@@ -1,44 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Craftlyt helps artisans price, manage, and sell handmade work with confidence—from materials to shipping." />
-  <title>Craftlyt</title>
+<?php
+$pageTitle = 'Craftlyt';
+$pageDescription = 'Craftlyt helps artisans price, manage, and sell handmade work with confidence—from materials to shipping.';
+$bodyClass = '';
+$stylesheets = ['assets/css/styles.css', 'assets/css/pages.css'];
+$pageScripts = [];
+$isPage = false;
+?>
+<?php include __DIR__ . '/components' . '/head.php'; ?>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
 
-  <header class="site-header">
-    <div class="container navbar">
-      <a href="index.html" class="logo">Craftlyt</a>
-
-      <input type="checkbox" id="nav-toggle" class="nav-checkbox" />
-      <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
-
-      <nav class="nav-links" aria-label="Main">
-        <a href="index.html">Home</a>
-        <a href="storefront.html">Storefront</a>
-        <a href="#">Dashboard</a>
-        <a href="signup.html">Sign up</a>
-      </nav>
-
-      <div class="navbar-trailing">
-        <a href="login.html" class="login-btn">Login</a>
-        <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-    </div>
-  </header>
-
-  <section class="hero">
+  <?php include __DIR__ . '/components' . '/header.php'; ?>
+<section class="hero">
     <div class="container hero-wrapper">
 
       <div class="hero-content">
@@ -54,8 +26,8 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="storefront.html" class="primary-btn">Browse products</a>
-          <a href="login.html" class="secondary-btn">Maker Login</a>
+          <a href="storefront.php" class="primary-btn">Browse products</a>
+          <a href="login.php" class="secondary-btn">Maker Login</a>
         </div>
       </div>
 
@@ -164,28 +136,4 @@
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container footer-wrapper">
-
-      <div class="footer-left">
-        <h2>Craftlyt</h2>
-        <p>© 2026 Craftlyt. Handcrafted with intention.</p>
-      </div>
-
-      <nav class="footer-links" aria-label="Footer">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Support</a>
-      </nav>
-
-      <div class="footer-icons" aria-hidden="true">
-        <span>◻</span>
-        <span>◯</span>
-        <span>✉</span>
-      </div>
-
-    </div>
-  </footer>
-
-</body>
-</html>
+  <?php include __DIR__ . '/components' . '/footer.php'; ?>
